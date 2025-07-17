@@ -1,0 +1,4 @@
+node_modules
+token.txt
+.DS_Store
+*.log
