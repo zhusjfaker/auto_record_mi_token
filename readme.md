@@ -38,7 +38,7 @@ src/
    或者直接运行：
 
    ```sh
-   node src/index.js --file /Users/zhushijie/Desktop/github/mi_token/token.txt
+   node src/index.js
    ```
 
 4. 登录后，`passToken` 会自动保存到 `token.txt` 文件。
