@@ -25,7 +25,7 @@ async function main() {
   const page = await browser.newPage();
 
   await page.goto(
-    'https://cn.account.xiaomi.com/fe/service/login/password?_locale=zh_CN&source=&region=CN&sid=passport&qs=_locale%3Dzh_CN&callback=https%3A%2F%2Faccount.xiaomi.com&_uRegion=CN'
+    'https://account.xiaomi.com/fe/service/login/password?_locale=zh_CN'
   );
 
   console.log('请手动登录小米账号...');
