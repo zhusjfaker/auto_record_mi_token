@@ -43,6 +43,22 @@ src/
 
 4. 登录后，`passToken` 会自动保存到 `token.txt` 文件。
 
+## Docker 使用示例
+
+你可以通过 Docker 快速运行本项目。请将 `你的手机号` 和 `你的密码` 替换为你自己的小米账号信息。
+
+```sh
+docker run -d \
+  --name mi-token \
+  --restart=always \
+  -e MI_USER=你的手机号 \
+  -e MI_PASS=你的密码 \
+  -v /mnt/sda3/mi_account/token.txt:/usr/src/work_dir/auto_record_mi_token/token.txt \
+  zsj439453290/record_mi_passtoken:1.0.0-linux-amd64
+```
+
+> 注意：请勿将账号和密码明文暴露在公共环境中。
+
 ## 依赖
 
 - [puppeteer](https://pptr.dev/)
